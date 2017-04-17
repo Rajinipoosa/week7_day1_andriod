@@ -9,7 +9,7 @@ public class Movie {
     private String genre;
     private int ranking;
 
-    public Movie implements Changeable(String title, String genre, int ranking)
+    public Movie (String title, String genre, int ranking)
     {
         this.title = title;
         this.genre =genre;
@@ -27,5 +27,13 @@ public class Movie {
     public int getRanking() {
         return ranking;
     }
+     @Override
+
+    public String toString(){
+      {
+
+    return "Title: '" + this.title + "', Genre: '" + this.genre + "', Ranking: " + this.ranking + "";
+}
+  }
 
 }
